@@ -5,7 +5,6 @@
     <RootNamespace>AoC_2022</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Helpers/ArrayFunctions.fs" />
     <Compile Include="Helpers/Stopwatch.fs" />
     <Compile Include="Puzzle1/Solution.fs" />
     <Content Include="Puzzle1/input.txt">

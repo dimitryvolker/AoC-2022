@@ -3,6 +3,7 @@ open System.IO
 open Microsoft.FSharp.Collections
 
 let solve() =
+    printfn "Day 1: Calorie Counting  --"
     let mutable elves = [0];
     let mutable calorieCount = 0;
 
