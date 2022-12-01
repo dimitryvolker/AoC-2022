@@ -1,11 +1,28 @@
 ﻿open AoC2022.Helpers.Stopwatch
 
 // For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
+printfn @"Hello from F#"
+printfn @"         |"
+printfn @"        -+-"
+printfn @"         A"
+printfn @"        /=\               /\  /\    ___  _ __  _ __ __    __"
+printfn @"      i/ O \i            /  \/  \  / _ \| '__|| '__|\ \  / /"
+printfn @"      /=====\           / /\  /\ \|  __/| |   | |    \ \/ /"
+printfn @"      /  i  \           \ \ \/ / / \___/|_|   |_|     \  /"
+printfn @"    i/ O * O \i                                       / /"
+printfn @"    /=========\        __  __                        /_/    _"
+printfn @"    /  *   *  \        \ \/ /        /\  /\    __ _  ____  | |"
+printfn @"  i/ O   i   O \i       \  /   __   /  \/  \  / _` |/ ___\ |_|"
+printfn @"  /=============\       /  \  |__| / /\  /\ \| (_| |\___ \  _"
+printfn @"  /  O   i   O  \      /_/\_\      \ \ \/ / / \__,_|\____/ |_|"
+printfn @"i/ *   O   O   * \i"
+printfn @"/=================\"
+printfn @"       |___|"
+printfn ""
+printfn ""
+printfn ""
 
-let sample() = System.Threading.Thread.Sleep(10003)
-
-track sample
+track AoC2022.Puzzle1.solve
 
 // Ignore close
 System.Console.ReadKey() |> ignore

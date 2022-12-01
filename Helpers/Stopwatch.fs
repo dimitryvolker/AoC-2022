@@ -1,9 +1,10 @@
+[<AutoOpen>]
 module AoC2022.Helpers.Stopwatch
-open System.IO
 
 let track f = 
-    let timer = new System.Diagnostics.Stopwatch()
+    let timer: System.Diagnostics.Stopwatch = new System.Diagnostics.Stopwatch()
     timer.Start()
     let returnValue = f()
-    printfn "Elapsed Time: %i ms" timer.ElapsedMilliseconds
+    printfn "-- Elapsed Time: %i ms" timer.ElapsedMilliseconds
+    printfn ""
     returnValue

@@ -5,7 +5,15 @@
     <RootNamespace>AoC_2022</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Helpers/ArrayFunctions.fs" />
     <Compile Include="Helpers/Stopwatch.fs" />
+    <Compile Include="Puzzle1/Solution.fs" />
+    <Content Include="Puzzle1/input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Puzzle1/example_input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
