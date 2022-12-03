@@ -1,5 +1,8 @@
 ﻿open AoC2022.Helpers.Stopwatch
 
+printfn ""
+printfn ""
+printfn ""
 printfn @"         |"
 printfn @"        -+-"
 printfn @"         A"
@@ -21,6 +24,5 @@ printfn ""
 printfn ""
 
 track AoC2022.Puzzle1.solve
-
-// Ignore close
-System.Console.ReadKey() |> ignore
+track AoC2022.Puzzle2.solve
+track AoC2022.Puzzle3.solve
