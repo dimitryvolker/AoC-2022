@@ -19,13 +19,13 @@ let solve () =
     let duplicateItemScore =
         File.ReadLines("Puzzle3/input.txt")
         |> Seq.map (fun x ->
-            (x.[0 .. (x.Length / 2 - 1)] |> Seq.map char |> Seq.toList,
-             x.[(x.Length / 2) .. x.Length] |> Seq.map char |> Seq.toList))
-        |> Seq.map (fun (x, y) -> Set.intersect (Set.ofList x) (Set.ofList y) |> Set.toList)
+            (x.[0 .. (x.Length / 2 - 1)] |> Seq.map char |> Set.ofSeq,
+             x.[(x.Length / 2) .. x.Length] |> Seq.map char |> Set.ofSeq))
+        |> Seq.map (fun (x, y) -> Set.intersect  x  y |> Set.toArray)
         |> Seq.map (fun x -> charToScore x[0])
         |> Seq.sum
 
-    printfn "\tDuplicate item score: %d" duplicateItemScore
+    printfn "\t Duplicate item score: %d" duplicateItemScore
 
     // Solution 2
     let groupScore =
