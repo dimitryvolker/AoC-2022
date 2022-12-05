@@ -27,3 +27,4 @@ track AoC2022.Puzzle1.solve
 track AoC2022.Puzzle2.solve
 track AoC2022.Puzzle3.solve
 track AoC2022.Puzzle4.solve
+track AoC2022.Puzzle5.solve

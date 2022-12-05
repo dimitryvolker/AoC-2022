@@ -6,6 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Helpers/Stopwatch.fs" />
+    <Compile Include="CustomTypes/Stack.fs" />
     <Compile Include="Puzzle1/Solution.fs" />
     <Content Include="Puzzle1/input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -32,6 +33,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Puzzle4/example_input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Puzzle5/Solution.fs" />
+    <Content Include="Puzzle5/input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Puzzle5/example_input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Compile Include="Program.fs" />
