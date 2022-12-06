@@ -16,8 +16,5 @@ let solve() =
         |> Seq.head 
         |> Seq.toList
 
-    let startSignal = input |> List.windowed 4
-    printfn "\t First start-of-packet marker on charater number: %d" (find(startSignal, 4, 0))
-    
-    let startSignal = input |> List.windowed 14
-    printfn "\t First start-of-message marker on charater number: %d" (find(startSignal, 14, 0))
+    printfn "\t First start-of-packet marker on charater number: %d" (find((input |> List.windowed 4), 4, 0))
+    printfn "\t First start-of-message marker on charater number: %d" (find((input |> List.windowed 14), 14, 0))
