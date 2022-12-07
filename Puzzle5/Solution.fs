@@ -3,7 +3,7 @@ module AoC2022.Puzzle5
 open System.IO
 open System.Text.RegularExpressions
 open System
-open CustomTypes
+open CustomTypes.Stack
 
 let fileName = "Puzzle5/input.txt";
 

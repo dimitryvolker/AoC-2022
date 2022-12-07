@@ -1,4 +1,4 @@
-module AoC2022.CustomTypes
+module AoC2022.CustomTypes.Stack
 
 // Stack FiLo
 type Stack<'a>() = 
