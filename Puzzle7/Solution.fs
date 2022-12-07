@@ -34,8 +34,6 @@ let solve () =
 
     // Build that tree
     for data in input do
-        printfn "Executing: %s" data
-
         match data with
         | data when data.StartsWith("$ cd /") -> currentNode <- Some tree
         | data when data.StartsWith("$ cd ..") -> currentNode <- currentNode.Value.Parent
@@ -61,11 +59,10 @@ let solve () =
     printfn "\t The sum of the total sizes of directories with size threshold 100000: %d" results
 
     let neededSize = (30000000 - (70000000 - tree.Size))
-
     let smallestDir =
         determineDirectorySizes (tree, System.Int32.MaxValue, [])
         |> Seq.filter (fun (x, y) -> y > neededSize)
         |> Seq.sortBy (fun (x, y) -> y)
         |> Seq.head
 
-    printfn "\t Smallest directory to delete is %A" smallestDir
+    printfn "\t Smallest directory to delete is: %A" smallestDir
