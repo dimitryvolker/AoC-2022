@@ -30,3 +30,4 @@ track AoC2022.Puzzle4.solve
 track AoC2022.Puzzle5.solve
 track AoC2022.Puzzle6.solve
 track AoC2022.Puzzle7.solve
+track AoC2022.Puzzle8.solve
